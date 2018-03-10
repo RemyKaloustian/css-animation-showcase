@@ -8,6 +8,12 @@
     src: url("camptonl.otf");
 }
 
+body
+{
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
 body, button
 {
     font-family: campton-light;
@@ -27,6 +33,7 @@ h1
     flex-direction: column;
     width:30%;
     margin: auto;
+
 }
 
 button

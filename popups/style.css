@@ -33,7 +33,6 @@ h1
     flex-direction: column;
     width:30%;
     margin: auto;
-
 }
 
 button
@@ -42,6 +41,8 @@ button
     font-size: 1.2rem;
     height: 70px;
     transition-duration: 0.5s;
+    margin-bottom: 30px;
+    
 }
 
 button:hover
@@ -50,7 +51,7 @@ button:hover
     color:#AA00FF;
     transition-duration: 0.5s;
 }
-.popup
+#popup
 {
     position: absolute;
     background-color: #AA00FF;
@@ -61,9 +62,11 @@ button:hover
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 50px;
+    margin-left:-100%;
+    top:50px;
 }
 
-.popup h3
+#popup h3
 {
     padding-top: 30px;
     padding-left: 50px;
@@ -73,7 +76,7 @@ button:hover
     margin: auto;
 }
 
-.popup a
+#popup a
 {
     text-align: center;
     color: #f5f5f5;
@@ -81,18 +84,18 @@ button:hover
     
 }
 
-.popup a:hover
+#popup a:hover
 {
     font-size: 1.5rem;
     transition-duration: 0.3s;
 }
 
-.popup button
+#popup button
 {
     background-color: #E040FB;
 }
 
-.popup button:hover
+#popup button:hover
 {
     background-color: #f5f5f5;
 }
@@ -100,34 +103,8 @@ button:hover
 #left-popup
 {
     top:15%;
-    margin-left: -100%;
+    margin-top: -100%;
     z-index: 2;
-    //display: none;
 }
-
-
-/* SLide from left */
-.slide-from-left
-{
-    animation: slide-from-left 0.5s ease forwards
-}
-
-@keyframes slide-from-left
-{
-    0%{
-        margin-left: -100%;
-        transform: translateX(-50%);
-    }
-    10%
-    {
-        display: block;
-        
-    }
-  100%{
-      margin-left:50%;
-      transform: translateX(-50%);
-    }
-}
-
 
 

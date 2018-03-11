@@ -1,17 +1,30 @@
+let animations = [
+    {show:'slide-from-left', hide:'slide-to-left'},
+    {show:'slide-from-right', hide:'slide-to-right'},
+];
+
 $(document).ready(function(){
 
-    console.log('init');
-    let ids = [
-        {title:'left-popup', link:'haha', },
+    displayButtons();
 
-    ];
+    $('#buttons button').on('click', function(event) {
+        //Animating the popup
+        animID = $(event.target).attr('data-anim');
+        $('#popup').removeClass();
+        $('#popup').addClass(animations[animID].show);        
+        $('#popup').addClass(animations[animID].show);
 
-    for (let index = 0; index < ids.length; index++) {
-        $('body').append('<div class="popup slide-from-left" id="'+ids[index].title+'">'+
-            '<h3 class="popup-title">'+ ids[index].title+'</h3>'+
-            '<a href="'+ ids[index].link+ '"> See the code <a/><br/>'+ 
-            '<button>Hide this dude</button>'+       
-        '</div>' );        
+        //When clicking the close button
+        $('#popup button').on('click', function (event) {
+            //ANimating the popup back
+            $('#popup').removeClass(animations[animID].show);
+            $('#popup').addClass(animations[animID].hide);
+        });
+    });  
+ });//ready()
+
+ function displayButtons(){
+    for (let index = 0; index < animations.length; index++) {
+        $('#buttons').append('<button data-anim="'+index+'">'+animations[index].show +'</button>')
     }
- 
- });
+ }

@@ -19,9 +19,10 @@ $(document).ready(function(){
 
         //When clicking the close button
         $('#popup button').on('click', function (event) {
-            //ANimating the popup back
+            //Animating the popup back
             $('#popup').removeClass(animations[animID].show);
             $('#popup').addClass(animations[animID].hide);
+            
         });
     });  
  });//ready()

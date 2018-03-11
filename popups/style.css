@@ -38,9 +38,9 @@ h1
 
 button
 {
-    border: 3px solid #f5f5f5;
-    font-size: 1.7rem;
-    height: 90px;
+    border: 2px solid #f5f5f5;
+    font-size: 1.2rem;
+    height: 70px;
     transition-duration: 0.5s;
 }
 
@@ -50,3 +50,84 @@ button:hover
     color:#AA00FF;
     transition-duration: 0.5s;
 }
+.popup
+{
+    position: absolute;
+    background-color: #AA00FF;
+    height: 300px;
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+.popup h3
+{
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;
+    width:70%;
+    margin: auto;
+}
+
+.popup a
+{
+    text-align: center;
+    color: #f5f5f5;
+    transition-duration: 0.3s;
+    
+}
+
+.popup a:hover
+{
+    font-size: 1.5rem;
+    transition-duration: 0.3s;
+}
+
+.popup button
+{
+    background-color: #E040FB;
+}
+
+.popup button:hover
+{
+    background-color: #f5f5f5;
+}
+
+#left-popup
+{
+    top:15%;
+    margin-left: -100%;
+    z-index: 2;
+    //display: none;
+}
+
+
+/* SLide from left */
+.slide-from-left
+{
+    animation: slide-from-left 0.5s ease forwards
+}
+
+@keyframes slide-from-left
+{
+    0%{
+        margin-left: -100%;
+        transform: translateX(-50%);
+    }
+    10%
+    {
+        display: block;
+        
+    }
+  100%{
+      margin-left:50%;
+      transform: translateX(-50%);
+    }
+}
+
+
+

@@ -1,6 +1,9 @@
 let animations = [
     {show:'slide-from-left', hide:'slide-to-left'},
     {show:'slide-from-right', hide:'slide-to-right'},
+    {show:'slide-from-top', hide:'slide-to-top'},
+    {show:'slide-from-bottom', hide:'slide-to-bottom'},
+    
 ];
 
 $(document).ready(function(){

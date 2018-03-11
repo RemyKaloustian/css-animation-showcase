@@ -65,5 +65,46 @@
 }
 
 
+/* Slide from top */
+.slide-from-top
+{
+    animation: slide-from-top 0.5s ease forwards;
+}
+@keyframes slide-from-top
+{    0%{
+        margin-left:50%; 
+        margin-top: -100%;
+        transform: translateX(-50%);
+    }   
+  100%{
+    margin-left:50%;       
+      margin-top:15%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+}
+
+
+/* Slide to top */
+.slide-to-top
+{
+    animation: slide-to-top 0.5s ease forwards ;
+}
+@keyframes slide-to-top
+{     0%{
+    margin-left:50%; 
+    margin-top:15%;    
+    transform: translateX(-50%) translateY(-50%);
+}   
+    100%{
+    margin-left:50%;       
+    margin-top: -100%;    
+    transform: translateX(-50%) ;
+    }
+}
+
+
+
+
+
 
 

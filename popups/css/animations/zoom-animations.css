@@ -78,3 +78,30 @@
 }
 
 
+/*flash*/
+.flash
+{
+    animation: flash 1s ease forwards;
+}
+@keyframes flash
+{    0%{
+        opacity: 0;
+        margin-left: 50%;
+        transform:translateX(-50%);
+    }
+
+  50%{
+      opacity: 1;
+      margin-left:50%;
+      transform: translateX(-50%) ;
+    }
+    60% {   background-color: #E040FB; }
+    70% {   background-color: #AA00FF; }
+    80% {   background-color: #E040FB; }
+    90% {   background-color: #AA00FF; }
+    95%{    background-color: #E040FB; }
+    100%{   background-color: #AA00FF;; 
+        margin-left:50%;
+        transform: translateX(-50%) ;
+    }
+}
